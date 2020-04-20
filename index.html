@@ -1,4 +1,3 @@
-
 <html>
 <head>
 	<title>Noémie Pinardon-Touati</title>
@@ -6,6 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="google-site-verification" content="HP-ZOTYP6aG08t1Bn-y-cAgAXRRbfWcLWYpb3VTUBdQ" />
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lato:300,700|Prata" rel="stylesheet">
+	<link href="css/all.css" rel="stylesheet"> <!--load all styles -->
 	<style type="text/css">
 		<!--
 		a:link,a:visited {
@@ -24,7 +24,7 @@
 			font-style: normal; 
 			font-variant: normal;
 			line-height: 30px; 
-	
+
 			text-align: left;
 			color:#F76C6C;
 
@@ -87,92 +87,166 @@
 			background-color: #FFFFFF;
 		}
 
+		#navigation-bar{
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			height: auto;
+			padding: 5px 0px;
+			background-color: #FFFFFF;
+			opacity: 0.6;
+		}
+		#navigation-bar .navigation-content{
+			width: 90%;
+			margin: auto;
+			text-align: right
+		}
+
+		#navigation-bar .navigation-content ul li {  
+			display: inline; 
+		} 
+
+		#navigation-bar .navigation-content  ul li a { 
+			text-decoration: none; 
+			padding: .5em 2em; 
+			color: #24305E; 
+			font-family: 'Lato', sans-serif;
+			font-size: 16px; 
+
+		} 
+
+		#navigation-bar .navigation-content  ul li a:hover { 
+			color: #24305E; 
+			border-bottom: 2px solid #24305E ;  
+		} 
+
+		#main {
+		margin-top: 30px; /* Add a top margin to avoid content overlay */
+		}
+
+
 		-->
 	</style>
 </head>
 <body>
 
-
-	<table width="100%" border="0" cellspacing="40" cellpadding="5">
-		<tr valign="top">
-			<td valign="top"> 
-				<table border="0" cellspacing="10" cellpadding="3">
-					<tr><td class="sitetitle">Noémie Pinardon-Touati</td></tr>	
-					<tr><td class="sitesubtitle">&nbsp PhD Candidate in Finance, HEC Paris</td></tr>	
-					<tr class="blank_row"><td colspan="1"></td></tr>
-					<tr><td class="intro">I'm a third year PhD student in Finance at HEC Paris. My main research fields are corporate finance and banking.</td></tr>
-					<tr><td class="intro">I have a master's degree in economics from the Paris School of Economics and from Ecole Polytechnique/ENSAE.</td></tr>
-					<tr><td class="intro">You can contact me at <a href=mailto:noemie.pinardon-touati@hec.edu>noemie.pinardon-touati@hec.edu</a>.</td></tr>
-					<tr class="blank_row"><td colspan="1"></td></tr>
-					<tr><td class="intro">You can download my resume <a href="https://www.dropbox.com/s/kzjft3iurjtrrkp/AcademicCV.pdf?dl=0" target="_blank">here</a></td></tr>
-				</table>
-			</td>
-			<td width="300" valign="middle">
-				<img src="images/profile.png" width="300" border="0">
-			</td>
-		</tr>
-	</table>
+	<div id="navigation-bar">
+		<div class="navigation-content">
+			<ul class="navigation-menu">
+				<li><a href="#research">Research</a></li>
+				<li><a href="files/AcademicCV.pdf">CV</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<!-- Your <li> elements here -->
+				</ul>
+			</div>
+		</div>
 
 
+<div id="main">
 
-	<table width="100%" cellspacing="15" cellpadding="1">
-		<tr><td height="60" valign="bottom" class="category"> &nbsp &nbsp Working papers</td></tr>
-		<tr><td height="1" bgcolor="#FFFFFF"></td></tr>
-
-
-
-		<tr>
-			<td>
-				<table width="100%" border="0" cellspacing="0" cellpadding="10">
-					<!-- PAPER -->
-					<tr>
-						<td width="200" valign="top">
-							<table border="0" cellspacing="0" cellpadding="0">
-								<tr><td> <img src="images/rec_favors.png" width="200" border="0"></td></tr>
-								<tr><td class="legend">Spread of public entity bank loans over similar maturity T-bills</td></tr>
-							</table>
-						</td>
-						<td valign="top">
-							<table border="0" cellspacing="0" cellpadding="3">
-								<tr><td class="title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3429836">Private Credit Under Political Influence: Evidence from France</a></td></tr>
-								<tr><td class="coauthors">with Anne-Laure Delatte and Adrien Matray</td></tr>
-						<!-- <tr><td class="journal">Journal of Industrial Economics, 2019</td></tr>-->
-						        <tr><td class="description">Formally independent private banks change their supply of credit in the constituencies of political incumbents to improve their reelection prospects. In return, politicians grant these banks access to the profitable market for loans to local public entities in their constituencies. Using French credit registry data over 2007-2017, we find that credit to the private sector increases by 9% to 14% the year before a powerful incumbent faces a contested election. Consistent with politicians returning the favor, banks that grant more credit to private firms in pre-election years gain market share in the local public entity debt market after the election. Our results show that formal independence does not ensure the private sector's effective independence from politically-motivated distortions, if politicians have discretion over rent allocation.</td></tr>  <!-- <tr><td class="text"><a href="Hombert_2019JIE_VerticalMergers.pdf">[pdf]</a> <a href="Hombert_2019JIE_VerticalMergers_supp.pdf">[supplementary appendix]</a></td></tr>-->
-						        <tr><td class="text">In the media (in French): <a href="https://www.lemonde.fr/idees/article/2020/02/14/il-existe-en-france-un-mecanisme-d-echange-de-faveurs-entre-elus-locaux-et-banques_6029606_3232.html">Le Monde</a>, <a href="https://www.lesechos.fr/finance-marches/banque-assurances/elections-letude-qui-pointe-les-relations-troubles-entre-elus-locaux-et-banques-1185265">Les Echos</a>, <a href="https://www.liberation.fr/debats/2020/02/24/les-bons-comptes-de-campagne-entre-banques-et-elus_1779460">Libération</a>, <a href="https://www.franceculture.fr/emissions/le-journal-des-idees/le-journal-des-idees-emission-du-mercredi-19-fevrier-2020">France Culture</a>.</td></tr> 
-						    </table>
-						</td>
-					</tr> <!-- END PAPER -->
-				</table>
-			</td>
-		</tr>
-	</table>
+		<table width="100%" border="0" cellspacing="40" cellpadding="5">
+			<tr valign="top">
+				<td valign="top"> 
+					<table border="0" cellspacing="10" cellpadding="3">
+						<tr><td class="sitetitle">Noémie Pinardon-Touati</td></tr>	
+						<tr><td class="sitesubtitle">&nbsp PhD Candidate in Finance, HEC Paris</td></tr>	
+						<tr class="blank_row"><td colspan="1"></td></tr>
+						<tr><td class="intro">I'm a third year PhD student in Finance at HEC Paris. My main research fields are corporate finance and banking.</td></tr>
+						<tr><td class="intro">I have a master's degree in economics from the Paris School of Economics and from Ecole Polytechnique/ENSAE.</td></tr>
+						<tr><td class="intro">You can contact me at <a href=mailto:noemie.pinardon-touati@hec.edu>noemie.pinardon-touati@hec.edu</a>.</td></tr>
+						<tr class="blank_row"><td colspan="1"></td></tr>
+						<tr><td class="intro">You can download my resume <a href="https://www.dropbox.com/s/kzjft3iurjtrrkp/AcademicCV.pdf?dl=0" target="_blank">here</a></td></tr>
+					</table>
+				</td>
+				<td width="300" valign="middle">
+					<img src="images/profile.png" width="300" border="0">
+				</td>
+			</tr>
+		</table>
 
 
 
-	<table width="100%" cellspacing="15" cellpadding="1">
-		<tr><td height="60" valign="bottom" class="category">&nbsp &nbsp Work in progress</td></tr>
-		<tr><td height="1" bgcolor="#FFFFFF"></td></tr>
-
-<!-- 1 PAPER BLOC -->
-		<tr>
-			<td>
-				<table width="100%" border="0" cellspacing="0" cellpadding="3">
-					<tr><td class="title">&nbsp &nbsp Do disagreements between managers and bankers have real effects? Evidence from the French Mediation program</td></tr>
-					<tr><td class="coauthors">&nbsp &nbsp with Aymeric Bellon and Louis-Marie Harpedanne</td></tr>
-				</table>
-			</td>
-		</tr><!-- END 1 PAPER BLOC -->
-		<!-- 1 PAPER BLOC -->
-		<tr>
-			<td>
-				<table width="100%" border="0" cellspacing="0" cellpadding="3">
-					<tr><td class="title">&nbsp &nbsp Does Government Debt Crowd Out Corporate Borrowing? A Bank-Lending Channel</td></tr>
-				</table>
-			</td>
-		</tr><!-- END 1 PAPER BLOC -->
-	</table>
+		<table width="100%" cellspacing="15" cellpadding="1">
+			<tr><td height="60" valign="bottom" class="category" id="research"> &nbsp &nbsp Working papers</td></tr>
+			<tr><td height="1" bgcolor="#FFFFFF"></td></tr>
 
 
-</body>
 
-</html>
+			<tr>
+				<td>
+					<table width="100%" border="0" cellspacing="0" cellpadding="10">
+						<!-- PAPER -->
+						<tr>
+							<td width="200" valign="top">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr><td> <img src="images/rec_favors.png" width="200" border="0"></td></tr>
+									<tr><td class="legend">Spread of public entity bank loans over similar maturity T-bills</td></tr>
+								</table>
+							</td>
+							<td valign="top">
+								<table border="0" cellspacing="0" cellpadding="3">
+									<tr><td class="title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3429836">Private Credit Under Political Influence: Evidence from France</a></td></tr>
+									<tr><td class="coauthors">with Anne-Laure Delatte and Adrien Matray</td></tr>
+									<!-- <tr><td class="journal">Journal of Industrial Economics, 2019</td></tr>-->
+									<tr><td class="description">Formally independent private banks change their supply of credit in the constituencies of political incumbents to improve their reelection prospects. In return, politicians grant these banks access to the profitable market for loans to local public entities in their constituencies. Using French credit registry data over 2007-2017, we find that credit to the private sector increases by 9% to 14% the year before a powerful incumbent faces a contested election. Consistent with politicians returning the favor, banks that grant more credit to private firms in pre-election years gain market share in the local public entity debt market after the election. Our results show that formal independence does not ensure the private sector's effective independence from politically-motivated distortions, if politicians have discretion over rent allocation.</td></tr>  <!-- <tr><td class="text"><a href="Hombert_2019JIE_VerticalMergers.pdf">[pdf]</a> <a href="Hombert_2019JIE_VerticalMergers_supp.pdf">[supplementary appendix]</a></td></tr>-->
+									<tr><td class="text">In the media (in French): <a href="https://www.lemonde.fr/idees/article/2020/02/14/il-existe-en-france-un-mecanisme-d-echange-de-faveurs-entre-elus-locaux-et-banques_6029606_3232.html">Le Monde</a>, <a href="https://www.lesechos.fr/finance-marches/banque-assurances/elections-letude-qui-pointe-les-relations-troubles-entre-elus-locaux-et-banques-1185265">Les Echos</a>, <a href="https://www.liberation.fr/debats/2020/02/24/les-bons-comptes-de-campagne-entre-banques-et-elus_1779460">Libération</a>, <a href="https://www.franceculture.fr/emissions/le-journal-des-idees/le-journal-des-idees-emission-du-mercredi-19-fevrier-2020">France Culture</a>.</td></tr> 
+								</table>
+							</td>
+						</tr> <!-- END PAPER -->
+					</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" cellspacing="15" cellpadding="1">
+			<tr><td height="60" valign="bottom" class="category">&nbsp &nbsp Work in progress</td></tr>
+			<tr><td height="1" bgcolor="#FFFFFF"></td></tr>
+
+			<!-- 1 PAPER BLOC -->
+			<tr>
+				<td>
+					<table width="100%" border="0" cellspacing="0" cellpadding="3">
+						<tr><td class="title">&nbsp &nbsp Do disagreements between managers and bankers have real effects? Evidence from the French Mediation program</td></tr>
+						<tr><td class="coauthors">&nbsp &nbsp with Aymeric Bellon and Louis-Marie Harpedanne</td></tr>
+					</table>
+				</td>
+			</tr><!-- END 1 PAPER BLOC -->
+			<!-- 1 PAPER BLOC -->
+			<tr>
+				<td>
+					<table width="100%" border="0" cellspacing="0" cellpadding="3">
+						<tr><td class="title">&nbsp &nbsp Does Government Debt Crowd Out Corporate Borrowing? A Bank-Lending Channel</td></tr>
+					</table>
+				</td>
+			</tr><!-- END 1 PAPER BLOC -->
+		</table>
+
+		<table width="100%" cellspacing="15" cellpadding="1">
+			<tr><td height="60" valign="bottom" class="category" id="contact">&nbsp &nbsp Contact</td></tr>
+			<tr><td height="1" bgcolor="#FFFFFF"></td></tr>
+
+			<!-- 1 PAPER BLOC -->
+			<tr>
+				<td>
+					<table width="100%" border="0" cellspacing="15" cellpadding="3">
+						<tr>
+							<td width="50"></td><td width="50"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></td>
+							<td class="text"><a href=mailto:noemie.pinardon-touati@hec.edu>noemie.pinardon-touati@hec.edu</a></td></tr>
+						<tr>
+							<td width="50"></td><td width="50"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></td>
+							<td class="text">+33 7 88 92 01 190</td></tr>
+						<tr>
+							<td width="50"></td><td width="50"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></td>
+							<td class="text">1 rue de la Libération - 78350 Jouy-en-Josas</td></tr>
+					</table>
+				</td>
+			</tr><!-- END 1 PAPER BLOC -->
+		</table>
+
+    </div>
+	</body>
+
+	</html>
